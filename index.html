@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vino V33</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <script src="Bootstrap/bootstrap.min.js"></script>
+    <script src="Bootstrap/jquery.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" media="screen and (max-device-width:768px)" href="CSS/mobile.css">
+    <link rel="stylesheet" media="screen and (min-device-width:768px)" href="CSS/pc.css">
+    <link rel="stylesheet" href="CSS/comune.css">
+
+    <script src="JS/script.js"></script>
+
+</head>
+<body style="background-color: whitesmoke" >
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/Screenshot 2025-03-05 233824.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+            Fornaseri
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-lang="home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-lang="features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-lang="pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-lang="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Filtro lingua -->
+    <div class="container mt-3">
+        <label for="language-select" class="font-weight-bold" data-lang="selectLang">Seleziona la lingua:</label>
+        <select id="language-select" class="form-control w-auto d-inline-block">
+            <option value="it">Italiano</option>
+            <option value="en" selected>English</option>
+        </select>
+    </div>
+    <br>
+
+    <!-- Intestazione -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center" id="vino" data-lang="wineTitle">Vino Rosso</h1>
+            <p class="text-center" data-lang="alcoholContent"> V33</p>
+            </div>
+        </div>
+
+        <!-- Tabella Ingredienti -->
+        <h2 class="mt-4" data-lang="ingredients">Ingredienti</h2>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th data-lang="ingredient">Ingrediente</th>
+                    <th data-lang="quantity">Quantità</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td data-lang="grapes">UVA</td><td>X</td></tr>
+                <tr><td data-lang="must">MOSTO DI UVE CONCENTRATO</td><td>X</td></tr>
+                <tr><td data-lang="preservatives">CONSERVANTI E ANTIOSSIDANTI</td><td>E224</td></tr>
+                <tr><td data-lang="stabilizers">AGENTI STABILIZZANTI</td><td>E353</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Tabella Valori Nutrizionali -->
+        <h2 class="mt-4" data-lang="nutrition">Valori Nutrizionali (per 100ml)</h2>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th data-lang="component">Componente</th>
+                    <th data-lang="value">Valore</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td data-lang="energy">Energia</td><td>329 KJ / 79 Kcal</td></tr>
+                <tr><td data-lang="fats">Grassi</td><td>0g</td></tr>
+                <tr><td data-lang="saturatedFats">di cui grassi saturi</td><td>0g</td></tr>
+                <tr><td data-lang="carbohydrates">Carboidrati</td><td>2.1g</td></tr>
+                <tr><td data-lang="sugars">di cui zuccheri</td><td>0.2g</td></tr>
+                <tr><td data-lang="proteins">Proteine</td><td>0g</td></tr>
+                <tr><td data-lang="fibers">Fibre</td><td>0g</td></tr>
+                <tr><td data-lang="salt">Sale</td><td>0g</td></tr>
+            </tbody>
+        </table>
+
+        <!-- Tabella Raccolta Differenziata -->
+        <h2 class="mt-4" data-lang="recycling">Raccolta Differenziata</h2>
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th data-lang="material">Materiale</th>
+                    <th data-lang="code">Codice</th>
+                    <th data-lang="disposal">Raccolta Differenziata</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td data-lang="damigiana">Damigiana</td><td data-lang="glassGL71">GL71 (Vetro)</td><td data-lang="glass">Vetro</td></tr>
+                <tr><td data-lang="cap">Tappo</td><td data-lang="plasticLDPE4">LDPE4 (Plastica)</td><td data-lang="plastica">Plastica</td></tr>
+                <tr><td data-lang="capsule">Capsula</td><td data-lang="aluminumALU41">ALU41 (Alluminio)</td><td data-lang="aluminum">Alluminio</td></tr>
+                <tr><td data-lang="tagliandino">Tagliandino</td><td data-lang="paperPAP20">PAP20 (Carta)</td><td data-lang="carta">Carta</td></tr>
+                <tr><td data-lang="woodenCage">Gabbia di legno</td><td data-lang="woodFOR50">FOR50 (Legno)</td><td data-lang="disposal_dedicated">Raccolta Differenziata Dedicata</td></tr>
+                <tr><td data-lang="plasticCage">Gabbia di plastica</td><td data-lang="plasticLDPE4">LDPE4 (Plastica)</td><td data-lang="plastica">Plastica</td></tr>
+                <tr>
+                    <td colspan="3" class="text-center font-weight-bold text-danger" data-lang="disclaimer">
+                        VERIFICARE LE DISPOSIZIONI DEL PROPRIO COMUNE
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
