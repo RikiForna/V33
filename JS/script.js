@@ -111,7 +111,8 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("selectedLanguage", lang);
   }
 
-  const savedLang = localStorage.getItem("selectedLanguage") || "en";
+  // Imposta sempre l'italiano quando la pagina viene caricata
+  const savedLang = "it";
   languageSelect.value = savedLang;
   changeLanguage(savedLang);
 
