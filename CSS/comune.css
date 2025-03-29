@@ -20,3 +20,8 @@ body{
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
+.align-right {
+    float: right;
+    font-weight: bold;
+}

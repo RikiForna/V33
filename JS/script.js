@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
       quantity: "Quantità",
       grapes: "UVA",
       must: "MOSTO DI UVE CONCENTRATO",
-      preservatives: "CONSERVANTI E ANTIOSSIDANTI",
-      stabilizers: "AGENTI STABILIZZANTI",
+      preservatives: 'CONSERVANTI: <span class="align-right">E224</span>',
+      stabilizers:
+        'AGENTI STABILIZZANTI: <span class="align-right">E353</span>',
       nutrition: "Valori Nutrizionali (per 100ml)",
       component: "Componente",
       value: "Valore",
@@ -64,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
       quantity: "Quantity",
       grapes: "GRAPES",
       must: "CONCENTRATED GRAPE MUST",
-      preservatives: "PRESERVATIVES AND ANTIOXIDANTS",
-      stabilizers: "STABILIZING AGENTS",
+      preservatives: 'PRESERVATIVES: <span class="align-right">E224</span>',
+      stabilizers: 'STABILIZING AGENTS: <span class="align-right">E353</span>',
       nutrition: "Nutritional Values (per 100ml)",
       component: "Component",
       value: "Value",
@@ -105,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-lang]").forEach((element) => {
       const key = element.getAttribute("data-lang");
       if (texts[lang][key]) {
-        element.innerText = texts[lang][key];
+        element.innerHTML = texts[lang][key];
       }
     });
     localStorage.setItem("selectedLanguage", lang);
